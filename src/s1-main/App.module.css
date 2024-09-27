@@ -3,17 +3,9 @@
 .App {
   padding-top: 100px;
   min-height: 700px;
-
-  /* min-height: 100vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .hw {
-  /* display: flex; */
-  /* justify-content: space-between; */
   width: 100%;
   max-width: 1300px;
   background-color: rgb(134, 221, 253);
