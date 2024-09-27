@@ -26,7 +26,7 @@ const Message = (props: MessagePropsType) => {
           </div>
           <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
             {/*создаёт студент*/}
-            {props.message.message.text.trim()} {/* Display the message text */}
+            {props.message.message.text} {/* Display the message text */}
           </pre>
         </div>
       </div>
