@@ -1,0 +1,38 @@
+/* App.module.css */
+
+.App {
+  padding-top: 100px;
+  min-height: 700px;
+
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.hw {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  width: 100%;
+  max-width: 1300px;
+  background-color: rgb(134, 221, 253);
+  padding-left: 70px;
+  padding-right: 70px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  min-height: 370px;
+}
+
+.hwTitle {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: #000;
+  margin-left: 70px;
+  padding-bottom: 10px;
+}
+
+/* //// */

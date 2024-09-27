@@ -1,0 +1,43 @@
+/* MessageSender.module.css */
+
+.sendForm {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.textarea {
+  width: 100%;
+  max-width: 890px;
+  margin-top: 50px;
+  flex-grow: 1;
+  min-height: 40px;
+  font-size: 16px;
+  resize: none;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #f5f7fb;
+  padding: 10px 5px 5px 20px;
+  overflow: hidden;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: #4586a0;
+}
+
+.button:active {
+}

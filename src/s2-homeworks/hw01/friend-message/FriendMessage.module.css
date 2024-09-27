@@ -1,0 +1,64 @@
+/* FriendMessage.module.css */
+
+.friendMessage {
+}
+
+.friendImageAndText {
+}
+
+.friendImageAndText img {
+  width: 48px;
+  height: 48px;
+  margin-top: 50px;
+}
+
+.friendText {
+  position: relative; /* Нужно для позиционирования стрелки относительно текста */
+  background-color: #f5f7fb;
+  border-radius: 15px;
+  height: 55px;
+  width: 410px;
+  margin-top: -60px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.friendText:after {
+  content: '';
+  position: absolute;
+  left: -8px; /* Смещает треугольник влево */
+  bottom: -7px; /* Позиционирует треугольник внизу */
+  height: 0px;
+  /* Увеличенная длина стрелки */
+  border-right: 15px solid #f5f7fb; /* Линия, представляющая сторону Y */
+  border-bottom: 15px solid transparent; /* Линия X — прозрачная */
+  border-top: 15px solid transparent; /* Верхняя граница — прозрачная */
+  transform: rotate(90deg);
+}
+
+.friendName {
+  margin-left: 15px;
+  margin-top: -55px;
+  padding-top: 7px;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.friendMessageText {
+  margin-left: 13px;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.friendTime {
+  margin-left: 5px;
+  margin-top: -17px;
+}
+
+/* //// */
