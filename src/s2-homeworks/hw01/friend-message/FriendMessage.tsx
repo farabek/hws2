@@ -22,17 +22,17 @@ const FriendMessage = (props: FriendMessagePropsType) => {
         <div className={s.friendText}>
           <div id={'hw1-friend-name-' + props.message.id} className={s.friendName}>
             {/*создаёт студент*/}
-            {props.message.user.name} {/* Display the friend's name */}{' '}
+            {props.message.user.name} {/* Display the friend's name */}
           </div>
           <pre id={'hw1-friend-text-' + props.message.id} className={s.friendMessageText}>
             {/*создаёт студент*/}
-            {props.message.message.text} {/* Display the friend's message text */}{' '}
+            {props.message.message.text} {/* Display the friend's message text */}
           </pre>
         </div>
       </div>
       <div id={'hw1-friend-time-' + props.message.id} className={s.friendTime}>
         {/*создаёт студент*/}
-        {props.message.message.time} {/* Display the friend's time */}{' '}
+        {props.message.message.time} {/* Display the friend's time */}
       </div>
     </div>
   );
