@@ -19,22 +19,12 @@ export type MessageType = {
   message: MessageBubbleType;
 };
 
-type MeesageUserType = {
-  avatar: string;
-  name: string;
-};
-
-type MessageBubbleType = {
-  text: string;
-  time: string;
-};
-
 // структуру объекта не менять
 export const message0: MessageType = {
   id: 0,
   user: {
     avatar: avatar, // можно менять
-    name: 'Bob', // можно менять
+    name: 'Diana ', // можно менять
   },
   message: {
     text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
@@ -45,7 +35,7 @@ export const friendMessage0: MessageType = {
   id: 100,
   user: {
     avatar: avatar, // можно менять
-    name: 'Niki', // можно менять
+    name: 'Victoria ', // можно менять
   },
   message: {
     text: 'зеркальное сообщение для тренировки css', // можно менять

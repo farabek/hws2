@@ -1,19 +1,9 @@
 .select {
-    width: 180px;
-    height: 25px;
-    appearance: none;
-    position: relative;
-    background-image: url(./chevron-down.svg);
-    background-repeat: no-repeat;
-    background-position: right 0;
-    padding: 0 10px;
-    border-radius: 4px;
 }
 
 .select:focus {
-
 }
 
+
 .option:hover {
-    background-color: rgba(30, 144, 255, 1);
 }

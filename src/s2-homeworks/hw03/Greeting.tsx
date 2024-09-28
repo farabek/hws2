@@ -1,15 +1,15 @@
-import React, {ChangeEvent, KeyboardEvent, KeyboardEventHandler} from 'react'
+import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
-    name: string
-    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
-    addUser: () => void
-    onBlur: () => void
-    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void
-    error: string
-    totalUsers: number
-    lastUserName?: string | null
+    name: any // need to fix any
+    setNameCallback: any // need to fix any
+    addUser: any // need to fix any
+    onBlur: any // need to fix any
+    onEnter: any // need to fix any
+    error: any // need to fix any
+    totalUsers: any // need to fix any
+    lastUserName?: any // need to fix any
 }
 
 // презентационная компонента (для верстальщика)
@@ -25,9 +25,8 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = error ? s.errorInput : s.input 
+    const inputClass = s.errorInput // need to fix with (?:)
 
-    console.log(lastUserName)
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <div className={s.text}>

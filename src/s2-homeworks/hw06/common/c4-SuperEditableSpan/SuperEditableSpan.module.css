@@ -1,15 +1,7 @@
-.editableSpan {
-}
-
 .spanBlock {
-
 }
 
 .span {
-    cursor: pointer;
-    display: inline-block;
-    height: 36px;
-    margin: 10px;
 }
 
 .input {

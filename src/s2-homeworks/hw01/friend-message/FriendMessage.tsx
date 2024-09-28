@@ -13,6 +13,8 @@ const FriendMessage = (props: MessagePropsType) => {
           id={'hw1-friend-avatar-' + props.message.id}
           // создаёт студент
           src={avatar}
+          alt={'avatar'}
+
           //
         />
         <div className={s.friendText}>
@@ -30,7 +32,7 @@ const FriendMessage = (props: MessagePropsType) => {
       </div>
       <div id={'hw1-friend-time-' + props.message.id} className={s.friendTime}>
         {/*создаёт студент*/}
-        22:00
+        23:05
         {/**/}
       </div>
     </div>

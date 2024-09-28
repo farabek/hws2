@@ -17,6 +17,8 @@ const Message = (props: MessagePropsType) => {
           id={'hw1-avatar-' + props.message.id}
           // создаёт студент
           src={avatar}
+          alt={'avatar'}
+
           //
         />
         <div className={s.text}>
@@ -34,7 +36,7 @@ const Message = (props: MessagePropsType) => {
       </div>
       <div id={'hw1-time-' + props.message.id} className={s.time}>
         {/*создаёт студент*/}
-        22:10
+        23:15
         {/**/}
       </div>
     </div>
