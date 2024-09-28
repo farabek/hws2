@@ -1,25 +1,58 @@
 /* FriendMessage.module.css */
 
 .friendMessage {
+  margin-bottom: 45px; /* Внешний отступ снизу – 45px, создаёт пространство между сообщениями друзей. */
 }
 
 .friendImageAndText {
+  display: flex; /* Включает flexbox для расположения дочерних элементов в строку. */
+  align-items: end; /* Выравнивает элементы по нижней линии (baseline) по вертикали. */
+  gap: 12px; /* Пространство между изображением и текстом – 12px. */
+  padding-left: 50px;
 }
 
 .friendImageAndText img {
+  width: 48px; /* Ширина изображения – 48px. */
+  height: 48px; /* Высота изображения – 48px. Соотношение сторон сохраняется квадратным. */
 }
 
 .friendText {
+  position: relative; /* Нужно для позиционирования стрелки относительно текста */
+
+  background-color: #f5f7fb; /* Задаёт цвет фона блока текста – светло-серый. */
+  color: #000000; /* Цвет текста – черный. */
+  padding: 8px 14px; /* Внутренние отступы: сверху и снизу – 8px, по бокам – 14px. */
+  font-size: 16px; /* Размер шрифта – 16px. */
+  max-width: 470px; /* Максимальная ширина текстового блока – 520px; текст будет переноситься при достижении этого предела. */
+  border-radius: 15px; /* Скругляет все углы блока на 10px. */
 }
 
 .friendText:after {
+  content: '';
+  position: absolute;
+  left: -8px; /* Смещает треугольник влево */
+  bottom: -7px; /* Позиционирует треугольник внизу */
+  height: 0px;
+  /* Увеличенная длина стрелки */
+  border-right: 15px solid #f5f7fb; /* Линия, представляющая сторону Y */
+  border-bottom: 15px solid transparent; /* Линия X — прозрачная */
+  border-top: 15px solid transparent; /* Верхняя граница — прозрачная */
+  transform: rotate(90deg);
 }
 
 .friendName {
+  font-size: 18px;
+  font-weight: 600; /* Полужирное начертание текста для имени друга. */
+  margin-bottom: 4px; /* Внешний отступ снизу – 4px, создаёт пространство между именем и текстом сообщения. */
 }
 
 .friendMessageText {
+  font-weight: 400; /* Нормальная (обычная) толщина шрифта для текста сообщения. */
 }
 
 .friendTime {
+  font-size: 15px; /* Размер шрифта для отображения времени сообщения – 10px. */
+  font-weight: 600; /* Полужирное начертание времени. */
+  text-align: left;
+  padding-left: 55px;
 }

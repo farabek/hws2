@@ -33,7 +33,7 @@ export const message0: MessageType = {
     name: 'Diana ', // можно менять
   },
   message: {
-    text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+    text: 'some textsome textsome textsome textsome textsome', // можно менять
     time: '22:00', // можно менять
   },
 };

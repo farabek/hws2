@@ -1,16 +1,48 @@
 /* MessageSender.module.css */
 
 .sendForm {
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: end; /* Выравнивает элементы по нижней линии (baseline) по вертикали. */
+  gap: 20px;
+  border-bottom: 2px solid #000;
 }
 
 .textarea {
+  max-width: 950px;
+  width: 100%;
+  min-height: 45px !important;
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: none;
+  background: #f5f7fb;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  resize: none;
+  overflow: hidden;
+}
+
+.textarea::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .button {
+  padding: 10px 38px;
+  border-radius: 20px;
+  background: rgb(0, 102, 204);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover {
+  background-color: #4586a0;
 }
-
 .button:active {
 }

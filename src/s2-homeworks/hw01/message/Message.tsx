@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Message.module.css';
 import { MessageType } from '../HW1';
-import avatar from './../avatar.png';
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
