@@ -1,2 +1,9 @@
 .container {
+    display: flex;
+    gap: 100px
+}
+
+.radioButtons {
+    display: flex;
+    flex-direction: column;
 }
