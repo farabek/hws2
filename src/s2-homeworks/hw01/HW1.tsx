@@ -15,8 +15,14 @@ import avatar from './avatar.png';
 
 export type MessageType = {
   id: number;
-  user: MeesageUserType;
-  message: MessageBubbleType;
+  user: {
+    avatar: string;
+    name: string;
+  };
+  message: {
+    text: string;
+    time: string;
+  };
 };
 
 // структуру объекта не менять
