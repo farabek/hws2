@@ -111,7 +111,7 @@ export const friendMessage0: MessageType = {
   },
   message: {
     text: ' Hello, how are you, what did you do yesterday?', // можно менять
-    time: '22:05', // можно менять
+    time: '22:10', // можно менять
   },
 };
 
