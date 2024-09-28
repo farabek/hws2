@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './FriendMessage.module.css';
 import { MessageType } from '../HW1';
+import avatar from './../avatar.png';
 
 export type FriendMessagePropsType = {
   message: MessageType;
@@ -16,7 +17,7 @@ const FriendMessage = (props: FriendMessagePropsType) => {
           id={'hw1-friend-avatar-' + props.message.id}
           // создаёт студент
 
-          src={props.message.user.avatar} // Use the avatar from props
+          src={avatar}
           alt={'friend avatar'}
         />
         <div className={s.friendText}>
@@ -32,7 +33,7 @@ const FriendMessage = (props: FriendMessagePropsType) => {
       </div>
       <div id={'hw1-friend-time-' + props.message.id} className={s.friendTime}>
         {/*создаёт студент*/}
-        {props.message.message.time} {/* Display the friend's time */}{' '}
+        22:08 {/* Display the friend's time */}{' '}
       </div>
     </div>
   );

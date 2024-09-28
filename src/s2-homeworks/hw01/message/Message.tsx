@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Message.module.css';
 import { MessageType } from '../HW1';
+import avatar from './../avatar.png';
 
 // нужно создать правильный тип вместо any
 // export type MessagePropsType = any
@@ -10,13 +11,14 @@ export type MessagePropsType = {
 
 // нужно отобразить приходящие данные
 const Message = (props: MessagePropsType) => {
+  // console.log(props);
   return (
     <div id={'hw1-message-' + props.message.id} className={s.message}>
       <div className={s.imageAndText}>
         <img
           id={'hw1-avatar-' + props.message.id}
           // создаёт студент
-          src={props.message.user.avatar} // Use the avatar from props
+          src={avatar}
           alt={'avatar'}
         />
         <div className={s.text}>
@@ -26,13 +28,13 @@ const Message = (props: MessagePropsType) => {
           </div>
           <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
             {/*создаёт студент*/}
-            {props.message.message.text} {/* Display the message text */}
+            {props.message.message.text} {/* Display the message text */}{' '}
           </pre>
         </div>
       </div>
       <div id={'hw1-time-' + props.message.id} className={s.time}>
         {/*создаёт студент*/}
-        {props.message.message.time} {/* Display the time */}{' '}
+        22:15 {/* Display the time */}{' '}
       </div>
     </div>
   );

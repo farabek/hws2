@@ -1,71 +1,25 @@
 /* Message.module.css */
 
 .message {
-  padding-right: 70px;
 }
 
 .imageAndText {
-  width: 780px;
-  height: 80px;
 }
 
 .imageAndText img {
-  width: 48px;
-  height: 48px;
-  margin-left: 1000px;
-  margin-top: 50px;
 }
 
 .text {
-  position: relative; /* Нужно для позиционирования стрелки относительно текста */
-  background-color: #0066cc;
-  border-radius: 15px;
-  height: 55px;
-  width: 410px;
-  margin-left: 580px;
-  margin-top: -60px;
 }
 
 .text:after {
-  content: '';
-  position: absolute;
-  right: -8px; /* Смещает треугольник влево */
-  bottom: -7px; /* Позиционирует треугольник внизу */
-  height: 0px; /* Увеличенная длина стрелки */
-  border-left: 15px solid #0066cc; /* Линия, представляющая сторону Y */
-  border-bottom: 15px solid transparent; /* Линия X — прозрачная */
-  border-top: 15px solid transparent; /* Верхняя граница — прозрачная */
-  transform: rotate(-90deg);
 }
 
 .name {
-  margin-left: 360px;
-  margin-top: -60px;
-  padding-top: 7px;
-
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-  color: #ffffff;
 }
 
 .messageText {
-  margin-left: 15px;
-
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #ffffff;
 }
 
 .time {
-  margin-left: 1005px;
-  margin-top: 20px;
-
-  width: auto; /* Ширина будет подстраиваться под текст */
-  display: inline-block; /* Обеспечивает правильное поведение с шириной */
 }
-
-/* //// */
