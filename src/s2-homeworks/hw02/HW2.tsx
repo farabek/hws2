@@ -37,14 +37,12 @@ const defaultAffairs: AffairType[] = [
 
 // pure helper functions
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => {
-  // need to fix any
-
-  return affairs; // need to fix
+  if (filter === 'all') return affairs;
+  return affairs.filter((affair) => affair.priority === filter);
 };
-export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {
-  // need to fix any
 
-  return affairs; // need to fix
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {
+  return affairs.filter((affair) => affair._id !== _id);
 };
 
 function HW2() {
@@ -53,8 +51,7 @@ function HW2() {
 
   const filteredAffairs = filterAffairs(affairs, filter);
   const deleteAffairCallback = (_id: number) => {
-    // need to fix any
-    // need to fix
+    setAffairs(deleteAffair(affairs, _id)); // Используем функцию deleteAffair и обновляем состояние
   };
 
   return (
@@ -73,3 +70,5 @@ function HW2() {
 }
 
 export default HW2;
+
+//
