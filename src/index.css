@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
 
   background-color: rgb(134, 221, 253);
+  overflow-x: hidden;
 }
 
 code {

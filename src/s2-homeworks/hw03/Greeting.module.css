@@ -1,35 +1,133 @@
+/*  Greeting.module.css */
+
 .greetingForm {
+  position: relative;
+  padding-bottom: 100px;
 }
 
 .inputAndButtonContainer {
+  margin: 10px 0 0;
+  display: flex;
+  width: 100%;
+  gap: 15px;
 }
 
 .error {
+  color: red;
+  font-size: 16px;
+  margin: 5px 0 10px;
 }
 
-.input {
+input {
+  width: 370px;
+  /* width: 100%;
+  max-width: 370px; */
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  box-sizing: border-box; /* Учитываем padding в ширину */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.errorInput {
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 370px;
+  /* max-width: 370px;
+  width: 100%; */
+  height: 36px;
+  padding: 0 10px;
+  background-color: #ffe6e6;
 }
 
 .input:focus {
 }
 
-.errorInput {
-}
-
 .button {
+  padding: 5px 24px;
+  width: 110px;
+  height: 40px;
+  background: #0066cc;
+  opacity: 1;
+  border-radius: 5px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  transition: opacity 0.3s, background-color 0.3s; /* Плавный переход между состояниями */
 }
 
+/* Когда кнопка получает фокус */
 .button:focus {
 }
 
+/* Когда кнопка активирована */
 .button:active {
+  background-color: #004999;
 }
 
+/* Когда кнопка отключена */
 .button:disabled {
+  background: rgb(8, 75, 200);
+  /* Меняем цвет кнопки, когда она отключена */
+  opacity: 0.5; /* Полупрозрачная */
+  cursor: not-allowed; /* Меняем курсор */
 }
 
 .text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: capitalize;
 }
+/* 
+.greetingForm::after {
+  content: '';
+  position: absolute;
+  left: -60px;
+  bottom: 0;
+  width: 100vw; 
+  height: 2px;
+  background-color: #000;
+  transform: translateX(-50vw + 50%); 
+} */
+
+/* 
+.greetingForm::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 2px;
+  background-color: #000;
+  transform: translateX(0); 
+} */
+
+.greetingForm::after {
+  content: '';
+  position: absolute;
+  left: -100px; /* Сдвигаем линию на 100 пикселей влево */
+  bottom: 0;
+  width: calc(100% + 200px); /* Растягиваем ширину на 200 пикселей больше */
+  height: 2px;
+  background-color: #000;
+}
+
+/* // */
