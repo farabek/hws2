@@ -2,11 +2,12 @@
 
 .sendForm {
   padding-bottom: 45px;
+  border-bottom: 2px solid #000;
+
   display: flex;
   justify-content: center;
   align-items: end;
   gap: 20px;
-  border-bottom: 2px solid #000;
 
   width: 100vw; /* Добавляет ширину на всю ширину окна */
   position: relative;

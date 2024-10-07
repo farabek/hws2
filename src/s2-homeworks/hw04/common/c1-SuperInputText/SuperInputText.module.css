@@ -5,16 +5,22 @@
 }
 
 .inputWrapper {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .superInput {
+  border: 1px solid #000;
 }
 
 .errorInput {
+  border: 2px solid hsl(348, 82%, 44%);
+  background-color: #ffe6e6;
 }
 
 .errorInput:focus {
 }
 
 .error {
+  color: hsl(348, 82%, 44%);
 }

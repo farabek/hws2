@@ -1,23 +1,38 @@
 .stand {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items: start;
+
+  position: relative;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.stand::after {
+  content: '';
+  position: absolute;
+  left: -100px; /* Сдвигаем линию на 100 пикселей влево */
+  bottom: 0;
+  width: calc(100% + 200px); /* Растягиваем ширину на 200 пикселей больше */
+  height: 2px;
+  background-color: #000;
 }
 
 .inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .checkboxes {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
