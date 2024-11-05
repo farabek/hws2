@@ -1,15 +1,44 @@
 .radio {
+  position: relative;
+  appearance: none; /* Убираем стандартный стиль радиокнопки */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%; /* Закругление, чтобы создать круг */
+  outline: none;
+  cursor: pointer;
+  margin-right: 8px;
 }
 
 .radio::before {
+  /* Настройка внутреннего круга для состояния "checked" */
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
-
 .radio:checked::before {
+  opacity: 1;
 }
 
 .label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
+
+/* // */
