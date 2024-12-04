@@ -1,12 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 40px;
 }
 
 .wrapper {
   display: flex;
-  gap: 35px;
+  /* align-items: center; */
+  gap: 30px;
 }
 
 .number {
@@ -16,5 +17,9 @@
   font-weight: 600;
   line-height: normal;
 }
+
+/* #hw11-value-2 {
+  margin-left: 10px;
+} */
 
 /* // */
