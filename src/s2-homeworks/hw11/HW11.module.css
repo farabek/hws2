@@ -6,10 +6,8 @@
 
 .wrapper {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 30px;
-  justify-content: flex-start; /* Выравнивание слева */
-  width: 300px; /* Фиксированная ширина для предотвращения сдвига */
 }
 
 .number {
