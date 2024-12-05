@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgb(134, 221, 253);
+  /* background-color: rgb(134, 221, 253); */
 }
 
 code {
